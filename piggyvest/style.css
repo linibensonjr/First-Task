@@ -6,13 +6,13 @@ body{
         url(images/purple.png), 
         url(images/pink.png);
     background-position: 
-        top -130px left -10px, 
+        top -80px left -10px, 
         top -20px right -90px, 
         bottom -30px right -70px, 
         bottom -70px left -32px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 130px;
+    background-size: 150px;
     background-attachment: fixed;
     font-family: BlinkMacSystemFont, 
                 'Segoe UI', Roboto, Oxygen,
