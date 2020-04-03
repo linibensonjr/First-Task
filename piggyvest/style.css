@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     overflow: auto;
     align-items: center;
-    
+    padding-bottom: 2em;
 }
 
 header{
@@ -51,7 +51,8 @@ label{
     font-family: sans-serif;
     color: #093473;
     line-height: 2;
-    font-size: .75rem;
+    font-size: .68em;
+    font-weight: bold;
 }
 
 select{
@@ -60,6 +61,7 @@ select{
     border: 1px solid #dedede;
     background-color: #EDF2F7;
     border-radius: 3px 3px 3px 3px;
+    width: 100%;
 }
 
 option{
@@ -84,7 +86,8 @@ button{
     font-family: sans-serif;
     text-transform: uppercase;
 }
-.register{
+img{
+    padding-bottom: 30px;
     
 }
 input{
@@ -94,5 +97,13 @@ input{
     border: 1px solid #dedede;
     background-color: #EDF2F7;
     border-radius: 3px 3px 3px 3px;
-    
+    display: block;
+    width: -webkit-fill-available;   
+}
+.log{
+    font-size: .75rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    color: white;
 }
