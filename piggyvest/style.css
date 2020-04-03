@@ -1,15 +1,24 @@
 body{
     background-color: #0D2D65;
+    background-image: 
+        url(images/blue.png), 
+        url(images/green.png), 
+        url(images/purple.png), 
+        url(images/pink.png);
+    background-position: 
+        top -130px left -10px, 
+        top -20px right -90px, 
+        bottom -30px right -70px, 
+        bottom -70px left -32px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150px;
+    background-attachment: fixed;
+    font-family: BlinkMacSystemFont, 
+                'Segoe UI', Roboto, Oxygen,
+                 sans-serif;
 }
-.rings{
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-}
-.dec{
-    height: 50px;
-    width: 50px;
-}
+
 
 .container{
     display: flex;
@@ -17,6 +26,10 @@ body{
     overflow: auto;
     align-items: center;
     padding-bottom: 2em;
+}
+
+.logo{
+    padding: 30px;
 }
 
 header{
@@ -31,7 +44,7 @@ header{
     background-color: white;
     border-radius: 20px 20px 20px 5px;
     padding: 40px;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 h1{
     font-family: sans-serif;
@@ -51,24 +64,23 @@ label{
     font-family: sans-serif;
     color: #093473;
     line-height: 2;
-    font-size: .68em;
+    font-size: .75em;
     font-weight: bold;
 }
 
 select{
-    padding:15px;
+    padding:18px;
     outline: none;
-    border: 1px solid #dedede;
+    border: none;
     background-color: #EDF2F7;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 8px;
     width: 100%;
 }
 
 option{
     padding:15px;
     outline: none;
-    border: 1px solid #dedede;
-    background-color: rgb(212, 34, 43);
+    border: 5px solid #dedede;
     border-radius: 3px 3px 3px 3px;
 }
 
@@ -80,25 +92,23 @@ button{
     margin-bottom: 10px;
     font-size: 14px;
     border: none;
-    width: 300px;
+    width: 100%;
     color: beige;
     font-weight: 700;
     font-family: sans-serif;
     text-transform: uppercase;
 }
-img{
-    padding-bottom: 30px;
-    
-}
+
 input{
     
-    padding:15px;
+    padding:20px;
     outline: none;
     border: 0px solid #dedede;
     background-color: #EDF2F7;
     border-radius: 3px 3px 3px 3px;
     display: block;
-    width: -webkit-fill-available;   
+    width: -webkit-fill-available;
+    margin-bottom: 35px;   
 }
 .log{
     font-size: .75rem;
@@ -106,4 +116,5 @@ input{
     font-weight: 400;
     font-family: Karla, sans-serif;
     color: white;
+    text-decoration: none;
 }
