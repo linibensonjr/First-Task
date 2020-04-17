@@ -1,0 +1,132 @@
+body {
+   
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(46, 219, 147);
+  background-image: linear-gradient(10deg, lightblue 50%, transparent 50%);
+  
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+
+.profile{
+    
+    padding: 40px;
+    display: block;
+    margin: 0;
+}
+
+.about{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+    padding:0px;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.social{
+    width: 100%;
+    background: blue;
+    padding-top: 0px;
+    margin:auto;
+    float: left;
+}
+
+.profile img{
+    width:80%;
+}
+
+
+.summary{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.summary h1{
+    font-size: 3rem;
+}
+
+.end{
+    left: 0;
+    width: 100%;
+    background: red;
+    bottom: 0;
+    position: absolute;
+}
+
+hr{
+    width: 80%;
+}
+
+table{
+    background: blue;
+    margin-bottom: 12px;
+    margin: 0 10% 12px 10%;
+}
+
+table td{
+    padding: 12px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  margin: auto;
+  
+  text-align: center;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+  }
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    width: 40%;
+    border-bottom: 2px solid red;
+}
+
+
+
+@media (max-width:778px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    .box, .summary{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+/*
+.footer {
+    position: fixed;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}*/
