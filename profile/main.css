@@ -14,10 +14,8 @@ h1 {
 }
 
 .profile{
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7VCbs_tTA5tGgMdssqiglwHaE8%26pid%3DApi&f=1);
     padding: 40px;
     display: block;
-    margin: 0;
 }
 
 .about{
@@ -35,10 +33,17 @@ h1 {
 
 .social{
     width: 100%;
-    background: blue;
-    padding-top: 0px;
-    margin:auto;
+    background: rgb(157, 157, 240);
+    padding: 10px;
     float: left;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+span, a{
+    padding: 5px;
+    margin: 5px;
 }
 
 .profile img{
@@ -70,13 +75,24 @@ hr{
 }
 
 table{
-    background: blue;
     margin-bottom: 12px;
     margin: 0 10% 12px 10%;
+    margin: auto;
 }
 
 table td{
-    padding: 12px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.material-icons{
+    color: white;
+}
+
+table .data{
+    font-weight: bold;
+    padding-right: 25px;
+    font-family: cursive;
 }
 
 .card{
