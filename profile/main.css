@@ -1,7 +1,4 @@
 body {
-  background-color: rgb(46, 219, 147);
-  background-image: linear-gradient(10deg, lightblue 50%, transparent 50%);
-  
   padding:0px;
   margin: 0px;
 }
@@ -21,8 +18,9 @@ h1 {
 
 #showcase{
     min-height: 500px;
+    background-position: center;
     background-repeat: no-repeat;
-    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2F3D-Nice-Wallpapers.jpg&f=1&nofb=1) -450px;
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flearntocodewith.me%2Fwp-content%2Fuploads%2F2016%2F03%2Fwriting-code.jpg&f=1&nofb=1) -450px;
     color: white;
     text-align: center;
 }
@@ -42,6 +40,20 @@ h1 {
     background: white;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+
+.info{
+    background: #2EDB93;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.info h2{
+    text-align: center;
+    font-size: 4em;
+    padding-top: 150px;
+    color: honeydew;
 }
 
 .social{
@@ -96,6 +108,7 @@ table{
 table td{
     padding: 5px;
     text-align: justify;
+    font-size: 1.5rem;
 }
 
 .material-icons{
@@ -135,15 +148,37 @@ input{
     border-bottom: 2px solid red;
 }
 
+#boxes{
+    margin-top: 20px;
+}
 
+.box{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+}
+
+#boxes .box img{
+    width: 30%;
+}
 
 @media (max-width:778px){
-    .about, .summary{
+    .about, .summary .box{
         float: none;
         text-align: center;
         width: 100%;
     }
+    table td{
+        padding: 5px;
+        text-align: justify;
+        font-size: 1rem;
+    }
 
+}
+
+.container p{
+    font-size: 2em;
 }
 /*
 .footer {
