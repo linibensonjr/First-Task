@@ -51,7 +51,7 @@ let questions = [
     choice4: "Ghana",
     answer: 3
   },
-   
+
 ];
 
 
@@ -68,10 +68,10 @@ startQuiz = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= totalQ) {
     localStorage.setItem("mostRecentScore", score);
-    
+
     return window.location.assign("score.html");
   }
-    
+
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${totalQ}`;
   //progress bar
@@ -99,20 +99,27 @@ choices.forEach(choice => {
     const selectedAnswer = selectedChoice.dataset["number"];
 
     const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+      selectedAnswer == currentQuestion.answer ? "correct" : "wrong";
+
 
     if (classToApply === "correct") {
       incrementScore(point);
-    }
-    
+  } else if (classToApply === "wrong") {
 
-   var nextq = document.getElementById('nxt');  
-   selectedChoice.parentElement.classList.add(classToApply);
+      var g = document.getElementsByClassName('choice-container');
+      //g.style.color('blue');
+
+  }
+
+  var nextq = document.getElementById('nxt');
+
+  selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
-       
+
        nextq.onclick = function() {getNewQuestion(),selectedChoice.parentElement.classList.remove(classToApply);};
     }, );
+
   });
 });
 
