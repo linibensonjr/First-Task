@@ -11,37 +11,52 @@ let availableQuesions = [];
 
 let questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript??",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<js>",
-    choice4: "<scripting>",
+    question: "Which of these is not a Continent",
+    choice1: "Madagacar",
+    choice2: "Europe",
+    choice3: "Africa",
+    choice4: "Antartica",
     answer: 1
   },
   {
     question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
+      "Google was founded by?",
+    choice1: "Iniobong Benson",
+    choice2: "Larry Pakinston",
+    choice3: "None of these",
+    choice4: "Laura Page",
     answer: 3
   },
   {
-    question: " How do you write 'Hello World' in an alert box?",
-    choice1: "msgBox('Hello World');",
-    choice2: "alertBox('Hello World');",
-    choice3: "msg('Hello World');",
-    choice4: "alert('Hello World');",
+    question: " How do you write 'Hello World' to a Javascript console?",
+    choice1: "print('Hello World');",
+    choice2: "console.log('Hello World');",
+    choice3: "console.out('Hello World');",
+    choice4: "printline('Hello World');",
+    answer: 2
+  },
+   {
+    question: "All but one is a search engine. Which?",
+    choice1: "DuckDuckGo",
+    choice2: "Bing Search",
+    choice3: "Yahoo Seach",
+    choice4: "Google Chrome",
     answer: 4
   },
-  
+     {
+    question: "Select the odd one out",
+    choice1: "Cameroon",
+    choice2: "Nigeria",
+    choice3: "South Africa",
+    choice4: "Ghana",
+    answer: 3
+  },
    
 ];
 
 
-const point = 3;
-const totalQ = 3;
+const point = 4;
+const totalQ = 5;
 
 startQuiz = () => {
   questionCounter = 0;
@@ -53,12 +68,13 @@ startQuiz = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= totalQ) {
     localStorage.setItem("mostRecentScore", score);
-    //go to the end page
+    
     return window.location.assign("score.html");
   }
+    
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${totalQ}`;
-  //Update the progress bar
+  //progress bar
   progressBarFull.style.width = `${(questionCounter / totalQ) * 100}%`;
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -88,14 +104,14 @@ choices.forEach(choice => {
     if (classToApply === "correct") {
       incrementScore(point);
     }
+    
 
-   var n = document.getElementById('nxt');
-     
+   var nextq = document.getElementById('nxt');  
    selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
-      
-       n.onclick = function() {getNewQuestion(),selectedChoice.parentElement.classList.remove(classToApply);};
+       
+       nextq.onclick = function() {getNewQuestion(),selectedChoice.parentElement.classList.remove(classToApply);};
     }, );
   });
 });
