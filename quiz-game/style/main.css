@@ -140,7 +140,6 @@ input::placeholder {
     .container{
         background: white;
         padding-top: 40px;
-        height: auto;
         overflow: scroll
     }
 }
