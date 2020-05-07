@@ -139,6 +139,8 @@ input::placeholder {
 @media (max-width:600px){
     .container{
         background: white;
-        padding-top: 40px
+        padding-top: 40px;
+        height: auto;
+        overflow: scroll
     }
 }
