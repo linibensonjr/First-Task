@@ -27,7 +27,7 @@ h1 > span {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
@@ -124,4 +124,8 @@ h3 {
         width: 80%;
         box-shadow: 0 43px 80px 0 rgba(20,0,0,0.2);
     }
+    :root {
+  background:url(/bg.jpg);
+  font-size: 62.5%;
+}
 }
