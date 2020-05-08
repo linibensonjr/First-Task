@@ -104,11 +104,12 @@ choices.forEach(choice => {
 
     if (classToApply === "correct") {
       incrementScore(point);
+      choice.style.color = 'white'
   } else if (classToApply === "wrong") {
 
       var g = document.getElementsByClassName('choice-container');
-      //g.style.color('blue');
-
+    // g.style.color = 'blue';
+    choice.style.color = 'white'
   }
 
   var nextq = document.getElementById('nxt');
