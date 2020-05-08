@@ -104,12 +104,13 @@ choices.forEach(choice => {
 
     if (classToApply === "correct") {
       incrementScore(point);
-      choice.style.color = 'white'
+      choice.style.color = 'white';
   } else if (classToApply === "wrong") {
 
       var g = document.getElementsByClassName('choice-container');
     // g.style.color = 'blue';
-    choice.style.color = 'white'
+    choice.style.color = 'white';
+    //alert(choice.currentAnswer.answer)
   }
 
   var nextq = document.getElementById('nxt');
@@ -118,7 +119,9 @@ choices.forEach(choice => {
 
     setTimeout(() => {
 
-       nextq.onclick = function() {getNewQuestion(),selectedChoice.parentElement.classList.remove(classToApply);};
+       nextq.onclick = function() {getNewQuestion(),selectedChoice.parentElement.classList.remove(classToApply);
+        choice.style.color = 'black';
+       };
     }, );
 
   });
